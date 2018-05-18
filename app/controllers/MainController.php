@@ -20,6 +20,15 @@ class MainController extends BaseController
         }
     }
 
+    public function showELibrary()
+    {
+        try{
+            return View::make('e-library', ['page' => 'e-library']);
+        } catch (\Exception $e) {
+            \Log::info(__METHOD__ . '************ and error occurred ***************' . print_r($e, 1));
+        }
+    }
+
     public function logout()
     {
         try{
@@ -50,6 +59,49 @@ class MainController extends BaseController
                 } else {
                     return ['success' => false, 'message' => 'Unable to find User.'];
                 }
+            }
+        } catch (\Exception $e) {
+            Log::info(__METHOD__ . '************ and error occurred ***************' . print_r($e, 1));
+        }
+    }
+
+    public function newsletter()
+    {
+        try{
+            $email = trim(Input::get('email'));
+
+            if(!empty($email)) {
+                $newsletter = Newsletter::where('email', '=', $email)->first();
+                if (empty($newsletter)) {
+                    $newsletter = New Newsletter;
+                    $newsletter->email = $email;
+                    $newsletter->save();
+                    return ['success' => true, 'message' => 'Thank you! You are now added to the Newsletter list!'];
+                } else {
+                    return ['success' => true, 'message' => 'Email already exists.'];
+                }
+            }
+        } catch (\Exception $e) {
+            Log::info(__METHOD__ . '************ and error occurred ***************' . print_r($e, 1));
+        }
+    }
+
+    public function myProfile()
+    {
+        try {
+            $userId = Session::get('user_id');
+
+            if (!empty($userId)) {
+
+                $profile = DB::table('user')
+                    ->select('*')
+                    ->join('user_profile', 'user.id', '=', 'user_profile.user_id')
+                    ->where('user.id', '=', $userId)
+                    ->first();
+Log::info(__METHOD__ . '************ $profile ***************' . print_r($profile, 1));
+                return View::make('e-learning', ['page' => 'e-learning', 'view' => 'portal.my-profile', 'profile' => $profile]);
+            } else {
+                return Redirect::to('e-learning');
             }
         } catch (\Exception $e) {
             Log::info(__METHOD__ . '************ and error occurred ***************' . print_r($e, 1));

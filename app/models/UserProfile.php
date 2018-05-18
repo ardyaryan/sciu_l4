@@ -5,18 +5,16 @@ use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableTrait;
 use Illuminate\Auth\Reminders\RemindableInterface;
 
-class User extends Eloquent implements UserInterface, RemindableInterface {
-
-	use UserTrait, RemindableTrait;
+class UserProfile extends Eloquent {
 
 	/**
 	 * The database table used by the model.
 	 *
 	 * @var string
 	 */
-	protected $table = 'user';
+	protected $table = 'user_profile';
 
-    protected $fillable = ['fname', 'lname','username', 'email', 'user_type'];
+    protected $fillable = ['user_id', 'city','country', 'first_access', 'last_access'];
 
     const USER_TYPE_ADMIN   = 1;
     const USER_TYPE_STUDENT = 2;
@@ -26,6 +24,6 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 *
 	 * @var array
 	 */
-	protected $hidden = array('password', 'remember_token','deleted_at', 'updated_at', 'created_at');
+	protected $hidden = array('updated_at', 'created_at');
 
 }

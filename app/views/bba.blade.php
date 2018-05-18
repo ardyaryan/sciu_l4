@@ -338,9 +338,9 @@
             <div class="services-bottom-grids">
                 <div class="col-md-4" style="margin-bottom: 20px;">
                     <div class="grid1">
-                        <a href="program-offered.html">
+                        <a href="/programs-offered">
                             <i class="fa fa-file" aria-hidden="true"></i>
-                            <h4>Program Offered</h4>
+                            <h4>Programs Offered</h4>
                         </a>
                     </div>
                 </div>

@@ -15,11 +15,9 @@
                 <h3>Request Information</h3>
             </div>
             <div class="col-md-8 footer_grid_right">
+                <input type="email" name="Email" id="email" placeholder="Enter Email Address..." required="">
+                <input type="submit" value="Submit" id="newsletter">
 
-                <form action="#" method="post">
-                    <input type="email" name="Email" placeholder="Enter Email Address..." required="">
-                    <input type="submit" value="Submit">
-                </form>
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -40,6 +38,7 @@
 <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
 <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
 <script src="{{ asset('js/jquery.countup.js') }}"></script>
+<script src="{{ asset('js/sciu/home.js') }}"></script>
 <script>
     $('.counter').countUp();
 </script>

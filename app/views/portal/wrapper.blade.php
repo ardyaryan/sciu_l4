@@ -3,6 +3,7 @@
         @include('portal.sidebar')
     </div>
     <div class="col-md-10">
-        {{ (string) View::make($view) }}
+
+        @include('portal.my-profile', ['profile' => $profile])
     </div>
 </div>

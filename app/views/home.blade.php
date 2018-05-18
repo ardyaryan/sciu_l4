@@ -112,7 +112,7 @@
         <div class="services-bottom-grids" style="margin-bottom: 50px;">
             <div class="col-md-4">
                 <div class="grid1">
-                    <a href="">
+                    <a href="https://www.facebook.com/SCIU-142169249761266/" target="_blank">
                         <i class="fa fa-facebook-square" aria-hidden="true"></i>
                         <h4>Join Us On Facebook</h4>
                     </a>
@@ -128,7 +128,7 @@
             </div>
             <div class="col-md-4">
                 <div class="grid1">
-                    <a href="">
+                    <a href="SCIUCatalogue.pdf" target="_blank">
                         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
                         <h4>Download Catalogue</h4>
                     </a>

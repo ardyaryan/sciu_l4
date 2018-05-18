@@ -52,6 +52,17 @@ Route::get('/e-learning/participants', function () {
     return View::make('e-learning', ['page' => 'e-learning', 'view' => 'portal.participants']);
 });
 
-Route::get('/e-learning', 'MainController@showELearning');
-Route::post('login',     'MainController@login');
-Route::get('logout',     'MainController@logout');
+Route::get('/application', function () {
+    return View::make('application', ['page' => 'application']);
+});
+
+Route::get('/programs-offered', function () {
+    return View::make('programs_offered', ['page' => 'program-offered']);
+});
+
+Route::get('/e-learning',               'MainController@showELearning');
+Route::get('/e-library',                'MainController@showELibrary');
+Route::post('login',                    'MainController@login');
+Route::get('logout',                    'MainController@logout');
+Route::post('newsletter',               'MainController@newsletter');
+Route::get('/e-learning/my-profile',    'MainController@myProfile');

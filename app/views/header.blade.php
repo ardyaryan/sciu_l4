@@ -41,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="w3l_header_right">
             <div class="w3ls-social-icons text-left">
                 <a class="comment" href="#"><i class="fa fa-comment"></i></a>
-                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="facebook" href="https://www.facebook.com/SCIU-142169249761266/" target="_blank"><i class="fa fa-facebook"></i></a>
                 <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
             </div>
         </div>
@@ -84,7 +84,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <li @if($page == 'e-library') {{ 'active'}} @endif><a href="/e-library">E-Library</a></li>
                                 </ul>
                             </li>
-                            <li @if($page == 'application') {{ 'active'}} @endif><a href="/application" class="effect-3">Application</a></li>
+                            <li @if($page == 'application') {{ 'active'}} @endif><a href="https://form.myjotform.com/73214053096552" target="_blank"         class="effect-3">Application</a></li>
                             <li @if($page == 'scholarship') {{ 'active'}} @endif><a href="/scholarship" class="effect-3">Scholarship</a></li>
                             <li @if($page == 'contact') {{ 'active'}} @endif><a href="/contact" class="effect-3">Contact</a></li>
                         </ul>

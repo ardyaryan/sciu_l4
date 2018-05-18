@@ -344,15 +344,15 @@
             <div class="services-bottom-grids">
                 <div class="col-md-4" style="margin-bottom: 20px;">
                     <div class="grid1">
-                        <a href="program-offered.html">
+                        <a href="/programs-offered">
                             <i class="fa fa-file" aria-hidden="true"></i>
-                            <h4>Program Offered</h4>
+                            <h4>Programs Offered</h4>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4" style="margin-bottom: 20px;">
                     <div class="grid1">
-                        <a href="tuition-fee.html">
+                        <a href="/tuition-fee">
                             <i class="fa fa-usd" aria-hidden="true"></i>
                             <h4>Tuition Fees</h4>
                         </a>
@@ -360,7 +360,7 @@
                 </div>
                 <div class="col-md-4" style="margin-bottom: 20px;">
                     <div class="grid1">
-                        <a href="payment-options.html">
+                        <a href="/payment-options">
                             <i class="fa fa-credit-card" aria-hidden="true"></i>
                             <h4>Payment Options</h4>
                         </a>

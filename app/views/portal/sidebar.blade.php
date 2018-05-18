@@ -39,7 +39,7 @@
                     <li>New New 3</li>
                 </ul>
                 <li>
-                    <a href="#" class="nav-links">
+                    <a href="/e-learning/my-profile" class="nav-links">
                         <i class="fa fa-user fa-lg"></i> My Profile
                     </a>
                 </li>
