@@ -9,7 +9,7 @@ Route::get('/mission-visions-goals', function () {
 });
 
 Route::get('/message', function () {
-    return View::make('message', ['page' => 'message']);
+    //return View::make('message', ['page' => 'message']);
 });
 
 Route::get('/programs-offered', function () {

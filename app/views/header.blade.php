@@ -62,7 +62,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">About SCIU <b class="caret"></b></a>
                                 <ul class="dropdown-menu" style="text-align: left;">
                                     <li @if($page == 'mission') {{ 'class=active'}} @endif><a href="/mission-visions-goals">Vision, Mission, Goals</a></li>
-                                    <li @if($page == 'message') {{ 'class=active'}} @endif><a href="/message">Message</a></li>
                                     <li @if($page == 'programs_offered') {{ 'class=active'}} @endif><a href="/programs-offered">Program Offered</a></li>
                                     <li @if($page == 'tuition') {{ 'class=active'}} @endif><a href="/tuition-fee">Tuition Fee</a></li>
                                     <li @if($page == 'payment') {{ 'class=active'}} @endif><a href="/payment-options">Payment Option</a></li>
