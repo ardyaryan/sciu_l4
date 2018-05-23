@@ -5,7 +5,7 @@
                 <strong>Name:</strong>
             </td>
             <td style="padding: 5px;">
-                {{ $profile->fname . ' ' . $profile->lname }}
+                {{ $data->fname . ' ' . $data->lname }}
             </td>
         </tr>
         <tr>
@@ -13,7 +13,7 @@
                 <strong>Location:</strong>
             </td>
             <td style="padding: 5px;">
-                {{ $profile->country . ', ' . $profile->city }}
+                {{ $data->country . ', ' . $data->city }}
             </td>
         </tr>
         <tr>
@@ -21,7 +21,7 @@
                 <strong>Email:</strong>
             </td>
             <td style="padding: 5px;">
-                {{ $profile->email }}
+                {{ $data->email }}
             </td>
         </tr>
         <tr>
@@ -29,7 +29,7 @@
                 <strong>First Access:</strong>
             </td>
             <td style="padding: 5px;">
-                {{ $profile->first_access }}
+                {{ $data->first_access }}
             </td>
         </tr>
         <tr>
@@ -37,7 +37,7 @@
                 <strong>Last Access:</strong>
             </td>
             <td style="padding: 5px;">
-                {{ $profile->last_access }}
+                {{ $data->last_access }}
             </td>
         </tr>
     </table>

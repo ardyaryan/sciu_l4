@@ -11,7 +11,7 @@ class MainController extends BaseController
         try{
             $userId = Session::get('user_id');
             if (!empty($userId)) {
-                return View::make('e-learning', ['page' => 'e-learning', 'view' => 'portal.home']);
+                return View::make('e-learning', ['page' => 'e-learning', 'view' => 'portal.home', 'data' => []]);
             } else {
                 return View::make('e-learning-login', ['page' => 'e-learning']);
             }
@@ -98,8 +98,8 @@ class MainController extends BaseController
                     ->join('user_profile', 'user.id', '=', 'user_profile.user_id')
                     ->where('user.id', '=', $userId)
                     ->first();
-Log::info(__METHOD__ . '************ $profile ***************' . print_r($profile, 1));
-                return View::make('e-learning', ['page' => 'e-learning', 'view' => 'portal.my-profile', 'profile' => $profile]);
+
+                return View::make('e-learning', ['page' => 'e-learning', 'view' => 'portal.my-profile', 'data' => $profile]);
             } else {
                 return Redirect::to('e-learning');
             }

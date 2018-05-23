@@ -3,7 +3,6 @@
         @include('portal.sidebar')
     </div>
     <div class="col-md-10">
-
-        @include('portal.my-profile', ['profile' => $profile])
+        @include($view, ['data' => $data])
     </div>
 </div>
