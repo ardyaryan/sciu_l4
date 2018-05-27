@@ -1,5 +1,5 @@
 <div class="" style="margin-bottom: 40px;">
-    <div class="nav-side-menu">
+    <div class="nav-side-menu" style="width: 240px;">
         <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
         <div class="menu-list">
             <ul id="menu-content" class="menu-content collapse out">
@@ -34,9 +34,15 @@
                     <a href="#"><i class="fa fa-graduation-cap fa-lg"></i> Courses <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="new">
-                    <li>New New 1</li>
-                    <li>New New 2</li>
-                    <li>New New 3</li>
+                    <li data-toggle="collapse" data-target="#resources" class="collapsed">
+                        <a href="#"> Resources<span class="arrow"></span></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="resources">
+                        <li><a href="/e-learning/resources"> Resources for Teachers</a></li>
+                        <li><a href="/e-learning/new-course"> Textbooks for Course Evaluators</a></li>
+                    </ul>
+                    <li><a href="/e-learning/new-course"> New Course</a></li>
+                    <li><a href="/e-learning/new-course"> MBA Courses</a></li>
                 </ul>
                 <li>
                     <a href="/e-learning/my-profile" class="nav-links">

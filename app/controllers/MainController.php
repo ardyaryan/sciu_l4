@@ -45,6 +45,8 @@ class MainController extends BaseController
             $userName = trim(Input::get('user_name'));
             $password = trim(Input::get('password'));
 
+            $LogHash = Hash::make($password);
+            Log::info(__METHOD__ . '************ $LogHash ***************' . print_r($LogHash, 1));
             if(!empty($userName)) {
                 $user = User::where('username', '=', $userName)->first();
                 if (!empty($user)) {

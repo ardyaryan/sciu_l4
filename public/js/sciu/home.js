@@ -5,7 +5,7 @@ $( document ).ready(function() {
         var email = $('#email').val();
 
         $.ajax({
-            url: 'newsletter',
+            url: '/newsletter',
             type: 'POST',
             data: {
                 email: email

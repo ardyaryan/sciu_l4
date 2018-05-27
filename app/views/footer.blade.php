@@ -56,7 +56,19 @@
         });
     });
 </script>
-
+<!-- Statcounter code for SCIU http://www.sciuniversity.com  -->
+<script type="text/javascript">
+    var sc_project=11720047;
+    var sc_invisible=1;
+    var sc_security="982ff407";
+</script>
+<script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js"
+        async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11720047/0/982ff407/1/" alt="Web
+Analytics Made Easy - StatCounter"></a></div></noscript>
+<!-- End of Statcounter Code -->
 </body>
 
 </html>
