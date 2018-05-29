@@ -66,6 +66,7 @@ Route::post('login',                    'MainController@login');
 Route::get('logout',                    'MainController@logout');
 Route::post('newsletter',               'MainController@newsletter');
 Route::get('/e-learning/my-profile',    'MainController@myProfile');
+Route::get('/e-learning/mba-courses',    'MainController@showMbaCourse');
 
 Route::get('/e-learning/apa-guideline', function () {
     if (empty(Session::get('user_id'))) {
@@ -80,3 +81,4 @@ Route::get('/e-learning/e-library-books', function () {
     }
     return View::make('e-learning', ['page' => 'e-learning', 'view' => 'portal.e-library-books', 'data' => []]);
 });
+

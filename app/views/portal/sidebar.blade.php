@@ -39,10 +39,10 @@
                     </li>
                     <ul class="sub-menu collapse" id="resources">
                         <li><a href="/e-learning/resources"> Resources for Teachers</a></li>
-                        <li><a href="/e-learning/new-course"> Textbooks for Course Evaluators</a></li>
+                        <li><a href="/e-learning/tex-book"> Textbooks for Course Evaluators</a></li>
                     </ul>
                     <li><a href="/e-learning/new-course"> New Course</a></li>
-                    <li><a href="/e-learning/new-course"> MBA Courses</a></li>
+                    <li><a href="/e-learning/mba-courses"> MBA Courses</a></li>
                 </ul>
                 <li>
                     <a href="/e-learning/my-profile" class="nav-links">

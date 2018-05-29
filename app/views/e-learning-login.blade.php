@@ -7,11 +7,11 @@
         <div class="" >
             <div class="form-group">
                 <label for="exampleInputEmail1">User Name</label>
-                <input type="text" class="form-control" id="user_name" aria-describedby="emailHelp" placeholder="Enter User Name" value="ardyaryan">
+                <input type="text" class="form-control" id="user_name" aria-describedby="emailHelp" placeholder="Enter User Name" value="">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password" value="1234">
+                <input type="password" class="form-control" id="password" placeholder="Password" value="">
             </div>
             <div class="form-check">
                 <label class="form-check-label">

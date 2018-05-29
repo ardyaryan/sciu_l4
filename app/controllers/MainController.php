@@ -109,4 +109,49 @@ class MainController extends BaseController
             Log::info(__METHOD__ . '************ and error occurred ***************' . print_r($e, 1));
         }
     }
+
+    public function showMbaCourse()
+    {
+        try {
+            $userId = Session::get('user_id');
+
+            if (!empty($userId)) {
+
+                $courses = Course::all()->toArray();
+                $courseContents = [];
+                foreach ($courses as $course) {
+                    $content = DB::table('course_content AS cc')
+                                    ->select('cc.name AS name', 'cc.course_period AS content_period',
+                                        'cc.file_name AS course_file_name', 'cc.course_name')
+                                    ->where('course_id', '=', $course['id'])
+                                    ->get();
+                    $json  = json_encode($content);
+                    $content = json_decode($json, true);
+
+                    $general = DB::table('course_general AS cg')
+                        ->select('cg.name', 'cg.file_name')
+                        ->where('course_id', '=', $course['id'])
+                        ->get();
+                    $json  = json_encode($general);
+                    $general = json_decode($json, true);
+
+                    $participants = DB::table('course_participant AS cp')
+                        ->select('*')
+                        ->where('course_id', '=', $course['id'])
+                        ->get();
+                    $json  = json_encode($participants);
+                    $participants = json_decode($json, true);
+
+                    array_push($courseContents, ['name' => $course['name'], 'content' => $content, 'general' => $general,'participants' => $participants]);
+
+                }
+                return View::make('e-learning', ['page' => 'e-learning', 'view' => 'portal.mba-courses', 'data' => ['course_contents' => $courseContents]]);
+            } else {
+                return Redirect::to('e-learning');
+            }
+        } catch (\Exception $e) {
+            Log::info(__METHOD__ . '************ and error occurred ***************' . print_r($e, 1));
+        }
+    }
+
 }
