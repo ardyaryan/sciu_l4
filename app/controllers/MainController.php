@@ -116,34 +116,26 @@ class MainController extends BaseController
             $userId = Session::get('user_id');
 
             if (!empty($userId)) {
-
                 $courses = Course::all()->toArray();
                 $courseContents = [];
                 foreach ($courses as $course) {
-                    $content = DB::table('course_content AS cc')
-                                    ->select('cc.name AS name', 'cc.course_period AS content_period',
-                                        'cc.file_name AS course_file_name', 'cc.course_name')
-                                    ->where('course_id', '=', $course['id'])
-                                    ->get();
-                    $json  = json_encode($content);
-                    $content = json_decode($json, true);
 
-                    $general = DB::table('course_general AS cg')
-                        ->select('cg.name', 'cg.file_name')
-                        ->where('course_id', '=', $course['id'])
-                        ->get();
-                    $json  = json_encode($general);
-                    $general = json_decode($json, true);
-
-                    $participants = DB::table('course_participant AS cp')
-                        ->select('*')
-                        ->where('course_id', '=', $course['id'])
-                        ->get();
-                    $json  = json_encode($participants);
-                    $participants = json_decode($json, true);
-
-                    array_push($courseContents, ['name' => $course['name'], 'content' => $content, 'general' => $general,'participants' => $participants]);
-
+                    $lectures = CourseLecture::where('course_id', '=', $course['id'])->get()->toArray();
+                    $lectureItems = [];
+                    foreach ($lectures as $lecture) {
+                        $lecturesProperties = DB::table('course_lecture AS cl')
+                            ->select('lf.lecture_name', 'lf.file_name', 'la.id as assignment_id', 'la.title as assignment_title', 'll.link', 'll.link_name', 'lfm.id as forum_id')
+                            ->leftJoin('lecture_file AS lf', 'cl.id', '=', 'lf.lecture_id')
+                            ->leftJoin('lecture_assignment AS la', 'cl.id', '=', 'la.lecture_id')
+                            ->leftJoin('lecture_link AS ll', 'cl.id', '=', 'll.lecture_id')
+                            ->leftJoin('lecture_forum AS lfm', 'cl.id', '=', 'lfm.lecture_id')
+                            ->where('cl.id', '=', $lecture['id'])
+                            ->get();
+                        $json  = json_encode($lecturesProperties);
+                        $lecturesProperties = json_decode($json, true)[0];
+                        $lectureItems[$lecture['lecture_period']] = $lecturesProperties;
+                    }
+                    array_push($courseContents, ['name'=> $course['name'] , 'items' => $lectureItems]);
                 }
                 return View::make('e-learning', ['page' => 'e-learning', 'view' => 'portal.mba-courses', 'data' => ['course_contents' => $courseContents]]);
             } else {

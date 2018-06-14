@@ -1,5 +1,5 @@
 <div class="" style="margin-bottom: 40px;">
-    <div class="nav-side-menu" style="width: 240px;">
+    <div class="nav-side-menu" >
         <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
         <div class="menu-list">
             <ul id="menu-content" class="menu-content collapse out">

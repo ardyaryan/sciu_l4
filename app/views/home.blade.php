@@ -30,13 +30,13 @@
             <div class="col-md-4 col-sm-4 col-xs-12 ab1 agileits-about-grid1" style="margin-right: 20px;">
                 <span class="fa fa-desktop" aria-hidden="true"></span>
                 <h4 class="agileinfo-head">Explore Our BBA Programs</h4>
-                <a href="" ><img src="images/sciu/sciufp.jpg" style="width: 100%;"/></a>
+                <a href="" ><img src="images/sciu/sciu-3-small.jpg" style="width: 100%;"/></a>
             </div>
 
             <div class="col-md-4 col-sm-4 ab1 agileits-about-grid3">
                 <span class="fa fa-bar-chart  wthree-title-list" aria-hidden="true"></span>
                 <h4 class="agileinfo-head">Discover Our MBA Programs</h4>
-                <a href="" ><img src="images/sciu/MBA.jpg" style="width: 100%;"/></a>
+                <a href="" ><img src="images/sciu/sciu-4-small.jpg" style="width: 100%;"/></a>
             </div>
             <div class="clearfix"></div>
         </div>
