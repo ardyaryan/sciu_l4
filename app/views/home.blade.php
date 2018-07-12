@@ -17,9 +17,10 @@
 </div>
 <!--//banner -->
 <!-- about -->
-<div class="agile-about w3ls-section text-center" id="about">
+<div class="agile-about text-center" id="about">
     <div class="container" style="height: 80px;">
         <h3 class="heading-agileinfo">Our Programs</h3>
+
     </div>
 </div>
 <!-- //about -->
@@ -73,7 +74,7 @@
         <div class="services-bottom-grids">
             <div class="col-md-4">
                 <div class="grid1">
-                    <a href="">
+                    <a href="https://form.myjotform.com/73214053096552" target="_blank">
                         <i class="fa fa-file" aria-hidden="true"></i>
                         <h4>Application Form</h4>
                     </a>
@@ -81,7 +82,7 @@
             </div>
             <div class="col-md-4">
                 <div class="grid1">
-                    <a href="">
+                    <a href="tuition-fee">
                         <i class="fa fa-usd" aria-hidden="true"></i>
                         <h4>Tuition Fee</h4>
                     </a>
@@ -89,7 +90,7 @@
             </div>
             <div class="col-md-4">
                 <div class="grid1">
-                    <a href="payment-options.html">
+                    <a href="payment-options">
                         <i class="fa fa-credit-card" aria-hidden="true"></i>
                         <h4>Payment Options</h4>
                     </a>
@@ -103,7 +104,7 @@
 <!-- news -->
 <div class="news" style="padding-top: 0px">
     <div class="container">
-        <a href="" ><h2 class="heading-agileinfo" style="font-size: 80px;margin-bottom: 0px;">Scholarships</h2></a>
+        <a href="/scholarship" ><h2 class="heading-agileinfo" style="font-size: 80px;margin-bottom: 0px;">Scholarships</h2></a>
     </div>
 </div>
 <!-- //news -->
@@ -120,7 +121,7 @@
             </div>
             <div class="col-md-4">
                 <div class="grid1">
-                    <a href="">
+                    <a href="" id="live_chat">
                         <i class="fa fa-comment" aria-hidden="true"></i>
                         <h4>Live Chat</h4>
                     </a>

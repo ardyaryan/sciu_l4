@@ -11,7 +11,7 @@
                     3440 Wilshire Blvd., 10th Floor<br>
                     Suite #1000 Los Angeles, CA 90010, USA<br>
                     <strong>EMAIL:</strong>
-                    info@sciuniversity.com<br>
+                    admin@sciuniversity.com<br>
                 </p>
             </div>
             <div class="clearfix"> </div>

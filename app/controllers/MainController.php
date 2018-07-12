@@ -67,6 +67,27 @@ class MainController extends BaseController
         }
     }
 
+    public function sendMessage()
+    {
+        try{
+            $email = strip_tags(trim(Input::get('email')));
+            $message = strip_tags(trim(Input::get('message')));
+            $body = "Email: " . $email . "\n\n" . $message;
+
+            if(!empty($email) && !empty($message)) {
+                $to = "ardy.aryan@gmail.com";
+                $subject = "Website Message";
+                $headers = "From: webmaster@sciu.com" . "\r\n" .
+                    "CC: ardy.aryan@gmail.com";
+
+                mail($to,$subject,$body,$headers);
+                return ['success' => true, 'message' => 'Successfully Sent.'];
+            }
+        } catch (\Exception $e) {
+            Log::info(__METHOD__ . '************ and error occurred ***************' . print_r($e, 1));
+        }
+    }
+
     public function newsletter()
     {
         try{
@@ -122,17 +143,39 @@ class MainController extends BaseController
 
                     $lectures = CourseLecture::where('course_id', '=', $course['id'])->get()->toArray();
                     $lectureItems = [];
+                    $lecturesProperties = [];
                     foreach ($lectures as $lecture) {
+                        Log::info(__METHOD__ . '************ $lecture ***************' . print_r($lecture, 1));
+                        /*
                         $lecturesProperties = DB::table('course_lecture AS cl')
-                            ->select('lf.lecture_name', 'lf.file_name', 'la.id as assignment_id', 'la.title as assignment_title', 'll.link', 'll.link_name', 'lfm.id as forum_id')
+                            ->select(
+                                'cl.id',
+                                DB::raw('GROUP_CONCAT(lf.lecture_name) AS lecture_names'),
+                                DB::raw('GROUP_CONCAT(lf.file_name) AS file_names'),
+                                DB::raw('GROUP_CONCAT(la.id) AS assignment_ids'),
+                                DB::raw('GROUP_CONCAT(la.title) AS assignment_titles'),
+                                DB::raw('GROUP_CONCAT(ll.link) AS links'),
+                                DB::raw('GROUP_CONCAT(ll.link_name) AS link_names'),
+                                DB::raw('GROUP_CONCAT(lfm.id) AS forum_ids')
+                            )
                             ->leftJoin('lecture_file AS lf', 'cl.id', '=', 'lf.lecture_id')
                             ->leftJoin('lecture_assignment AS la', 'cl.id', '=', 'la.lecture_id')
                             ->leftJoin('lecture_link AS ll', 'cl.id', '=', 'll.lecture_id')
                             ->leftJoin('lecture_forum AS lfm', 'cl.id', '=', 'lfm.lecture_id')
                             ->where('cl.id', '=', $lecture['id'])
                             ->get();
-                        $json  = json_encode($lecturesProperties);
-                        $lecturesProperties = json_decode($json, true)[0];
+                        */
+                        $lecturesProperties['files'] = LectureFile::where('lecture_id', '=', $lecture['id'])->select('lecture_name', 'file_name')->get()->toArray();
+                        $assignments = LectureAssignment::where('lecture_id', '=', $lecture['id'])->select('id', 'title')->get()->toArray();
+                        $links = LectureLink::where('lecture_id', '=', $lecture['id'])->select('link', 'link_name')->get()->toArray();
+                        $discussions = LectureForum::where('lecture_id', '=', $lecture['id'])->select('id')->get()->toArray();
+                        $lecturesProperties['assignments'] = $assignments;
+                        $lecturesProperties['links'] = $links;
+                        $lecturesProperties['discussions'] = $discussions;
+                        Log::info(__METHOD__ . '************ $lecturesProperties ***************' . print_r($lecturesProperties, 1));
+                        //$json  = json_encode($lecturesProperties);
+                        //$lecturesProperties = json_decode($json, true)[0];
+                        Log::info(__METHOD__ . '************ $lecturesProperties ***************' . print_r($lecturesProperties, 1));
                         $lectureItems[$lecture['lecture_period']] = $lecturesProperties;
                     }
                     array_push($courseContents, ['name'=> $course['name'] , 'items' => $lectureItems]);

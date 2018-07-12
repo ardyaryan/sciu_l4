@@ -182,7 +182,7 @@
                     <tr>
                         <td>GE 122  Fundamentals of Social Sciences</td>
                         <td>none</td>
-                        <td>45</td>
+                        <td>3</td>
                     </tr>
                     <tr>
                         <td>GE 123 Psychology and Human Communications</td>

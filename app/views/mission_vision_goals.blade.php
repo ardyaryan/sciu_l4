@@ -140,7 +140,7 @@
             <h3>Contact Info</h3>
             <ul class="address">
                 <li><i class="fa fa-map-marker" aria-hidden="true"></i>3440 Wilshire Blvd., 10th Floor, Suite #1000 <span>Los Angeles, CA 90010, USA</span></li>
-                <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@sciuniversity.com">info@sciuniversity.com</a></li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:admin@sciuniversity.com">admin@sciuniversity.com</a></li>
                 <li><i class="fa fa-phone" aria-hidden="true"></i>+1 213 204 3907</li>
             </ul>
         </div>

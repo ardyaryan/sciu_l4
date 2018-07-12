@@ -35,21 +35,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="w3l_header_left">
             <ul>
                 <li><i class="fa fa-phone" aria-hidden="true"></i>+1 213 204 3907</li>
-                <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@sciuniversity.com">info@sciuniversity.com</a></li>
+                <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:admin@sciuniversity.com">admin@sciuniversity.com</a></li>
             </ul>
         </div>
         <div class="w3l_header_right">
             <div class="w3ls-social-icons text-left">
+                <a class="" href="contact"><i class="fa fa-envelope"></i></a>
                 <a class="comment" href="#"><i class="fa fa-comment"></i></a>
                 <a class="facebook" href="https://www.facebook.com/SCIU-142169249761266/" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                {{--<a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>--}}
             </div>
         </div>
         <div class="clearfix"> </div>
     </div>
     <div class="content white agile-info">
         <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
+            <div class="container" style="width: 1270px;">
                 <div class="navbar-header">
                     <a href="/"><img src="{{ asset('images/sciu/SCUI_Logo_Black_Large.png') }}" style="width: 200px;"/></a>
                 </div>
@@ -65,7 +66,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <li @if($page == 'programs_offered') {{ 'class=active'}} @endif><a href="/programs-offered">Program Offered</a></li>
                                     <li @if($page == 'tuition') {{ 'class=active'}} @endif><a href="/tuition-fee">Tuition Fee</a></li>
                                     <li @if($page == 'payment') {{ 'class=active'}} @endif><a href="/payment-options">Payment Option</a></li>
-                                    <li @if($page == 'directors') {{ 'class=active'}} @endif><a href="/directors">Directors</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown @if($page == 'mba' || $page == 'bba') {{ 'active'}} @endif">
@@ -75,17 +75,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <li @if($page == 'mba') {{ 'class=active'}} @endif><a href="/mba">MBA</a></li>
                                 </ul>
                             </li>
+                            <li @if($page == 'faculty') {{ 'class=active'}} @endif><a href="/faculty" class="effect-3">Faculty & Staff</a></li>
                             <li @if($page == 'accreditation') {{ 'class=active'}} @endif><a href="/accreditation" class="effect-3">Accreditation</a></li>
                             <li class="dropdown @if($page == 'e_learning' || $page == 'e-library') {{ 'active'}} @endif">
                                 <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">Learning <b class="caret"></b></a>
                                 <ul class="dropdown-menu" style="text-align: left;">
                                     <li @if($page == 'e-learning') {{ 'active'}} @endif><a href="/e-learning">E-Learning</a></li>
-                                    <li @if($page == 'e-library') {{ 'active'}} @endif><a href="/e-library">E-Library</a></li>
+                                    <li @if($page == 'e-library') {{ 'active'}} @endif><a href="/e-learning">E-Library</a></li>
                                 </ul>
                             </li>
                             <li @if($page == 'application') {{ 'active'}} @endif><a href="https://form.myjotform.com/73214053096552" target="_blank"         class="effect-3">Application</a></li>
                             <li @if($page == 'scholarship') {{ 'active'}} @endif><a href="/scholarship" class="effect-3">Scholarship</a></li>
-                            <li @if($page == 'contact') {{ 'active'}} @endif><a href="/contact" class="effect-3">Contact</a></li>
                         </ul>
                     </nav>
                 </div>

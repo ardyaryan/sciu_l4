@@ -24,8 +24,8 @@ Route::get('/payment-options', function () {
     return View::make('payment_options', ['page' => 'payment']);
 });
 
-Route::get('/directors', function () {
-    return View::make('directors', ['page' => 'directors']);
+Route::get('/faculty', function () {
+    return View::make('faculty', ['page' => 'faculty']);
 });
 
 Route::get('/bba', function () {
@@ -63,6 +63,7 @@ Route::get('/programs-offered', function () {
 Route::get('/e-learning',               'MainController@showELearning');
 Route::get('/e-library',                'MainController@showELibrary');
 Route::post('login',                    'MainController@login');
+Route::post('sendmessage',              'MainController@sendMessage');
 Route::get('logout',                    'MainController@logout');
 Route::post('newsletter',               'MainController@newsletter');
 Route::get('/e-learning/my-profile',    'MainController@myProfile');

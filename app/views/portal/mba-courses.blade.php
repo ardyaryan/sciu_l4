@@ -12,17 +12,25 @@
                             <a href="#"><i class="fa fa-calendar "></i> {{ $period }} <span class="arrow"></span></a>
                         </li>
                         <ul class="sub-menu collapse" id="content_lecture_{{ $counter }}" style="margin-left: 10px">
-                            @if(!empty($lecture['lecture_name']))
-                                <a style="margin-left: 10px;" href="{{ '/' . $lecture['file_name'] }}"><i class="fa fa-file"></i> {{ $lecture['lecture_name'] }}</a><br>
+                            @if(!empty($lecture['files']))
+                                @foreach($lecture['files'] as $file)
+                                        <a style="margin-left: 10px;" href="{{ '/' . $file['file_name'] }}"><i class="fa fa-file"></i> {{ $file['lecture_name'] }}</a><br>
+                                @endforeach
                             @endif
-                            @if(!empty($lecture['assignment_title']))
-                                    <a style="margin-left: 15px;" href="/mba-courses/assignment/{{ $lecture['assignment_id'] }}" target="_blank"><i class="fa fa-tasks"></i> {{ $lecture['assignment_title'] }}</a><br>
+                            @if(!empty($lecture['assignments']))
+                                @foreach($lecture['assignments'] as $assignment)
+                                    <a style="margin-left: 10px;" href="/mba-courses/assignment/{{ $assignment['id'] }}" target="_blank"><i class="fa fa-tasks"></i> {{ $assignment['title'] }}</a><br>
+                                @endforeach
                             @endif
-                            @if(!empty($lecture['link']))
-                                <a style="margin-left: 20px;" href="{{ $lecture['link'] }}" target="_blank"><i class="fa fa-video-camera"></i> {{ $lecture['link_name'] }}</a><br>
+                            @if(!empty($lecture['links']))
+                                @foreach($lecture['links'] as $links)
+                                     <a style="margin-left: 10px;" href="{{ $links['link'] }}" target="_blank"><i class="fa fa-video-camera"></i> {{ $links['link_name'] }}</a><br>
+                                @endforeach
                             @endif
-                            @if(!empty($lecture['forum_id']))
-                                <a style="margin-left: 25px;" href="/mba-courses/forum/{{ $lecture['forum_id'] }}" target="_blank"><i class="fa fa-forumbee"></i> Discussion Board</a><br>
+                            @if(!empty($lecture['discussions']))
+                                @foreach($lecture['discussions'] as $key => $discussion)
+                                    <a style="margin-left: 10px;" href="/mba-courses/forum/{{ $discussion['id'] }}" target="_blank"><i class="fa fa-forumbee"></i> Discussion Board {{ $key + 1 }}</a><br>
+                                @endforeach
                             @endif
                         </ul>
                     </ul>
