@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44ed557d-695f-40fe-a339-48128a4d6a54" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/directors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/faculty.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/mba.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/mba.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/mission_vision_goals.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/mission_vision_goals.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/portal/mba-courses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/portal/mba-courses.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/sciu/sciu-3-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/sciu/sciu-3-small.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/sciu/sciu-4-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/sciu/sciu-4-small.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/sciu/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/sciu/home.js" afterDir="false" />
+    <list default="true" id="026729ff-8bba-4a73-9abf-16f7302a43d3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -158,82 +141,11 @@
       <dir>C:\wamp64\www\laravel5</dir>
     </dirStrings>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/app/config/app.php" />
-        <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/app/config/database.php" />
-        <option value="$PROJECT_DIR$/app/database/deploy.sql" />
-        <option value="$PROJECT_DIR$/app/models/Newsletter.php" />
-        <option value="$PROJECT_DIR$/app/models/User.php" />
-        <option value="$PROJECT_DIR$/app/models/UserProfile.php" />
-        <option value="$PROJECT_DIR$/app/views/e-learning.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/portal/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/portal/my-profile.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/portal/wrapper.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/portal/mba-courses.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/views/footer.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/MainController.php" />
-        <option value="$PROJECT_DIR$/app/views/header.blade.php" />
-        <option value="$PROJECT_DIR$/public/js/sciu/home.js" />
-        <option value="$PROJECT_DIR$/app/views/faculty.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/home.blade.php" />
-      </list>
-    </option>
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration">
-    <include_path>
-      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
-      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
-      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
-      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
-      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
-      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
-      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
-      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
-      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
-      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
-      <path value="$PROJECT_DIR$/vendor/patchwork/utf8" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
-      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
-      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/vendor/d11wtq/boris" />
-      <path value="$PROJECT_DIR$/vendor/ircmaxell/password-compat" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/stack/builder" />
-      <path value="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure" />
-      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
-      <path value="$PROJECT_DIR$/vendor/predis/predis" />
-      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
-      <path value="$PROJECT_DIR$/vendor/classpreloader/classpreloader" />
-      <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
-    </include_path>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -305,22 +217,6 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sciu" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\laravel5\app\models" />
-      <recent name="C:\wamp64\www\laravel5\app\views\portal" />
-      <recent name="C:\wamp64\www\laravel5\public\js\sciu" />
-      <recent name="C:\wamp64\www\laravel5\public" />
-      <recent name="C:\wamp64\www\laravel5\app\views" />
-    </key>
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -348,12 +244,12 @@
       <workItem from="1526341086165" duration="5467000" />
       <workItem from="1526611381154" duration="4783000" />
       <workItem from="1531095943950" duration="10258000" />
-      <workItem from="1531158800911" duration="2664000" />
+      <workItem from="1531158800911" duration="2681000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30543000" />
+    <option name="totallyTimeSpent" value="4000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -380,16 +276,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/views/portal/wrapper.blade.php">
